@@ -1,0 +1,3 @@
+queue:
+- name: cleanup
+  rate: 1/s

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+  <com.google.ads.GoogleAdView
+      android:id="@+id/adview"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" />
+  <TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:textSize="24sp"
+    android:id="@+id/win_game_text_box"
+    android:text="@string/message_win"
+    android:gravity="top|center"/>
+  <Button android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/button_new_game"
+    android:clickable="true"
+    android:layout_below="@id/win_game_text_box"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20px"
+    android:text="@string/new_game_button"></Button>
+</RelativeLayout>

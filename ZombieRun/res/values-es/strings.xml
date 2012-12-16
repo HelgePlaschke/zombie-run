@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="menu_pause">Pausa </string>
+<string name="menu_stop">Abandonar... y morir</string>
+<string name="menu_my_location">Mi ubicación</string>
+<string name="menu_map_view">Mapa</string>
+<string name="menu_satellite_view">Satélite</string>
+<string name="confirm_menu_stop">Qué horror. ¿Fue demasiado para ti? </string>
+<string name="paused">El mundo entero se ha detenido. ¿Cómo lo has hecho? </string>
+<string name="resume">Continuar </string>
+<string name="waiting_for_location">Obteniendo la ubicación con precisión... Has de estar en la calle y a cielo abierto. Esta operación puede llevar un par de minutos. </string>
+<string name="message_pick_destination">Selecciona tu destino pulsando sobre el mapa. </string>
+<string name="message_confirm_destination">Este es el destino que deseas elegir? </string>
+<string name="error_no_gps">No se encuentra ningún dispositivo GPS</string>
+<string name="error_gps_disabled">ZombieRun necesita información de posición procedente de un GPS. Tu dispositivo GPS está desactivado. Por favor, actívalo.</string>
+<string name="enable_gps">Activar GPS </string>
+<string name="error_no_vibrator">No se encuentra el vibrador del teléfono. ¡Mi*rda! Zombie, Run! no puede funcionar en este entorno. </string>
+<string name="message_win">Sobreviviste! </string>
+<string name="message_lose">¡Aaah! Cereeeeebros!</string>
+<string name="app_name">Zombie, Run!</string>
+<string name="header_singleplayer_entry">Juego en solitario</string>
+<string name="header_multiplayer_entry">Juego Multijugador</string>
+<string name="spinner_zombie_count_text">Tipo de infección (densidad de zombies) </string>
+<string name="spinner_zombie_speed_text">Tipo de zombies (velocidad de los zombies)</string>
+<string name="singleplayer_game_entry_button_text">Comenzar juego en solitario </string>
+<string name="multiplayer_game_entry_button_text">Comenzar juego multijugador </string>
+<string name="start_singleplayer_game_button_text">Juego en solitario</string>
+<string name="start_multiplayer_game_button_text">Crear multijugador</string>
+<string name="join_multiplayer_game_button_text">Unirse a partida</string>
+<string name="help_button_text">Ayuda </string>
+<string name="quit_confirm">Sipis.</string>
+<string name="quit_cancel">Espera, No. </string>
+<string name="start_game_button_text">Empezar el juego</string>
+<string name="new_game_button">Nueva partida </string>
+<string name="yes">Si.</string>
+<string name="no">No.</string>
+</resources>

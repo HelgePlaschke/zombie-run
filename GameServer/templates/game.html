@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% block body %}
+<body onload="javascript:gameInterface = initialize();"
+      onunload="javascript:switchView('loading');">
+  <div id="loading" class="display">
+    <p>Loading...</p>
+  </div>
+  
+  <div id="game" class="hidden">
+    <script type="text/javascript"><!--
+      window.googleAfmcRequest = {
+            client: 'ca-mb-pub-5257925350964339',
+            ad_type: 'text_image',
+            output: 'html',
+            channel: '8754697349',
+            format: '320x50_mb',
+            oe: 'utf8',
+            color_border: '336699',
+            color_bg: 'FFFFFF',
+            color_link: '0000FF',
+            color_text: '000000',
+            color_url: '008000',
+          };
+    //--></script>
+    <script type="text/javascript" 
+        src="http://pagead2.googlesyndication.com/pagead/show_afmc_ads.js"></script>
+    
+    <div id="map"></div>
+    <div id="menu">
+      <table width="100%" style="text-align: center;">
+        <tr>
+          <td>
+            <a href="#" onclick="javascript:gameInterface.moveToCurrentLocation();">
+              <img src="/res/YourLocationDot.png" width=16 height=16 border=0 />
+            </a>
+          </td>
+          <td>
+            <a href="#" onclick="javascript:gameInterface.addFriend();">Add Friend</a>
+          </td>
+	      <td>
+	        <a href="#" onclick="javascript:gameInterface.fortify();">Fortify</a>
+	      </td>
+          <td>
+            <a href="#" onclick="javascript:gameInterface.showMessage(new MenuMessage());">Menu</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="message" style="display: none;">
+    <div id="message_background" style="display: none;"></div>
+    <div id="message_container" style="display: none;">
+    </div>
+  </div>
+
+  <div id="errors" class="hidden">
+    The game could not be started because of one of a few errors:
+    <ul>
+      <li>There were some errors loading the game libraries (try refreshing the
+          page).</li>
+      <li>Your device does not have a way of determining its location.  Try
+          playing the game on one of the known supported devices.</li>
+    </ul>
+    
+    Known Supported Devices:
+    <ul>
+      <li>Apple iPhone 3G</li>
+      <li>Apple iPhone 3GS</li>
+      <li>HTC G1 (T-Mobile G1)</li>
+      <li>HTC Hero</li>
+      <li>Motorola Droid</li>
+      <li>Motorola Cliq</li>
+      <li>Google Nexus One</li>
+      <li>Firefox 3.5</li>
+    </ul>
+  </div>
+  
+  <!-- Load these libraries after the message is set up so that users can see
+       something while the javascript is loading, which can take some time over
+       a mobile connection -->
+  <script type="text/javascript" src="http://code.google.com/apis/gears/gears_init.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="js/lib/prototype-1.6.0.3.js"></script>
+  <script type="text/javascript" src="js/util.js"></script>
+  <script type="text/javascript" src="js/entities.js"></script>
+  <script type="text/javascript" src="js/game.js"></script>
+  <script type="text/javascript" src="js/dom_util.js"></script>
+  <script type="text/javascript">
+    var gameInterface = null;
+    var message_handler = new MessageHandler();
+
+    // Initializes the map and the game, switches the view to the map, starts
+    // the game, and returns the game oject.
+    function initialize() {
+      $("message").style.display = "block";
+
+      var mapOptions = {
+        // center: new google.maps.LatLng(0, 0),
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        zoom: 1,
+      };
+      
+      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+      // Who knows why using the straight game id seems to be off by one in
+      // javascript, but when we don't put the game id in quotes, to use it
+      // as a string, javascript interprets it as one less than the value.
+      //
+      // Integer overflow?
+      var game = new Game(map, message_handler, "{{ game_id }}", {{ debug }});
+      
+      if (!game.start()) {
+        switchView("errors");
+      }
+      
+      switchView("game");
+
+      game.showMessage(new WaitingForFirstFixMessage(), null);
+      return game;
+    }
+    
+    function switchView(id) {
+      var views = [ "game", "errors", "loading" ];
+      var foundElement = false;
+      for (var i = 0; i < views.length; ++i) {
+        element = $(views[i]);
+        if (id == element.id) {
+          element.className = "display";
+          foundElement = true;
+        } else {
+          element.className = "hidden";
+        }
+      }
+      if (!foundElement) {
+        alert("Error in display code.");
+      }
+    }
+  </script>
+</body>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block body %}
+<body>
+
+<div>
+  <img src="res/icon.png" style="float: left;" width="48" height="48" />
+  <h2>Zombie, Run!</h2>
+  <p>There are zombies out there.  They want to eat your brains.  This tool
+  shows you where they are.</p>
+  
+  <h3><a href="{{ login_url }}">Start a Private Game</a></h3>
+  <h3><a href="{{ global_game_login_url }}">Join the Global Game</a></h3>
+  
+  <p>You should travel in groups, invite your friends, it's safer.  Tell the
+  tool where you're going, and try to get there safely. If a zombie turns red,
+  it's chasing you.  You build a fortification to keep the zombies away, but not
+  more than once every 10 minutes.  When you leave your fortification, it goes
+  away.  Other people can stay safe inside your fortification, so you can
+  protect your friends, and your friends can protect you.</p>
+</div>
+  
+</body>
+{% endblock %}

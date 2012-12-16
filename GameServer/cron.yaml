@@ -1,0 +1,13 @@
+cron:
+
+- description: daily tile cleanup
+  url: /tasks/cleanup/tiles
+  schedule: every 12 hours
+
+- description: daily nonce tile cleanup
+  url: /tasks/cleanup/nonce_tiles
+  schedule: every 1 hours
+
+- description: daily game cleanup
+  url: /tasks/cleanup/games
+  schedule: every 12 hours

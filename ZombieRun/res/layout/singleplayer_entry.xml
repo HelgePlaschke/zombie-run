@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="15dip"
+    >
+  <TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="24sp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/title_box"
+    android:text="@string/header_singleplayer_entry" />
+
+  <TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/spinner_zombie_count_text"
+    android:text="@string/spinner_zombie_count_text"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/title_box"
+    android:layout_marginTop="15dip" />
+  <Spinner android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/spinner_zombie_count"
+    android:prompt="@string/spinner_zombie_count_text"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="5dip"
+    android:layout_below="@id/spinner_zombie_count_text"
+    android:entries="@array/zombie_counts_str" />
+
+  <TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/spinner_zombie_speed_text"
+    android:text="@string/spinner_zombie_speed_text"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/spinner_zombie_count"
+    android:layout_marginTop="10dip" />
+  <Spinner android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/spinner_zombie_speed"
+    android:prompt="@string/spinner_zombie_speed_text"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="5dip"
+    android:layout_below="@id/spinner_zombie_speed_text"
+    android:entries="@array/zombie_speeds_str" />
+
+  <Button android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/button_start_singleplayer"
+    android:clickable="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dip"
+    android:layout_below="@id/spinner_zombie_speed"
+    android:text="@string/start_game_button_text" />
+</RelativeLayout>

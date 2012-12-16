@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="menu_pause">Pausa</string>
+<string name="menu_stop">Arrendersi e Morire</string>
+<string name="menu_my_location">Mia posizione</string>
+<string name="menu_map_view">Mappa</string>
+<string name="menu_satellite_view">Satellite</string>
+<string name="confirm_menu_stop">L\' orrore era troppo per te?</string>
+<string name="paused">Il mondo intero è in pausa! Come hai fatto?</string>
+<string name="resume">Riprendi Vita</string>
+<string name="waiting_for_location">In attesa di una posizione precisa... Devi essere fuori con una chiara visione del cielo. L\' operazione potrebbe richiedere un paio di minuti.</string>
+<string name="message_pick_destination">Tocca la mappa per scegliere la destinazione</string>
+<string name="message_confirm_destination">Era la destinazione che avevi scelto?</string>
+<string name="error_no_gps">Nessun Dispositivo GPS Trovato</string>
+<string name="error_gps_disabled">ZombieRun richiede una posizione data dal GPS. Il tuo dispositivo GPS è disabilitato. Si prega di abilitarlo.</string>
+<string name="enable_gps">Abilita GPS</string>
+<string name="error_no_vibrator">Impossibile trovare la vibrazione nel telefono. Ack!  WTF! Non posso lavorare in questo modo.</string>
+<string name="message_win">Sopravvivenza!</string>
+<string name="message_lose">AAAH! Meeeeente!</string>
+<string name="app_name">Zombie, Corri!</string>
+<string name="header_singleplayer_entry">Gioco Single Player</string>
+<string name="header_multiplayer_entry">Gioco Multiplayer</string>
+<string name="spinner_zombie_count_text">Tipo di Epidemia (densità zombie)</string>
+<string name="spinner_zombie_speed_text">Tipo di Zombie (velocità zombie)</string>
+<string name="singleplayer_game_entry_button_text">Inizia Gioco Single Player</string>
+<string name="multiplayer_game_entry_button_text">Inizia Gioco Multiplayer</string>
+<string name="start_singleplayer_game_button_text">Inizia Gioco Single Player</string>
+<string name="start_multiplayer_game_button_text">Crea Nuovo Gioco Multiplayer</string>
+<string name="join_multiplayer_game_button_text">Iscriviti a Gioco Multiplayer</string>
+<string name="help_button_text">Aiuto</string>
+<string name="adsense_company_name">Laboratori Ricerca Zombie</string>
+<string name="adsense_keywords">android+phones,android+games,causal+gaming,android+accessories,zombies,zombie+movie,movies,running</string>
+<string name="quit_confirm">Si.</string>
+<string name="quit_cancel">Attualmente, No.</string>
+<string name="start_game_button_text">Inizia Gioco</string>
+<string name="new_game_button">Nuovo Gioco</string>
+<string name="yes">Si</string>
+<string name="no">No</string>
+</resources>

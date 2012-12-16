@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="menu_pause">Pause</string>
+<string name="menu_stop">Gib auf und stirb</string>
+<string name="menu_my_location">Mein Standort</string>
+<string name="menu_map_view">Karte</string>
+<string name="menu_satellite_view">Satellit</string>
+<string name="confirm_menu_stop">War der Horror zuviel für dich?</string>
+<string name="paused">Die ganze Welt steht still! Was machst du?!</string>
+<string name="resume">Weiterleben</string>
+<string name="waiting_for_location">Dein Standort wird bestimmt...Du musst dich unter freiem Himmel befinden. Das kann ein paar Minuten dauern.</string>
+<string name="message_pick_destination">Tippe auf die Karte, um dein Ziel zu wählen</string>
+<string name="message_confirm_destination">Ist das dein gewünschtes Ziel?</string>
+<string name="error_no_gps">Kein GPS-Gerät gefunden</string>
+<string name="error_gps_disabled">ZombieRun benötigt GPS-Informationen. Dein GPS-Gerät ist nicht aktiv. Bitte schalte deinen GPS-Empfänger an.</string>
+<string name="enable_gps">GPS aktivieren</string>
+<string name="error_no_vibrator">Der Vibrationsalarm wurde nicht gefunden. Was soll das? Ich kann so nicht arbeiten!</string>
+<string name="message_win">Überleben!</string>
+<string name="message_lose">AAAH! Gehirne!</string>
+<string name="app_name">Zombie, Run!</string>
+<string name="header_singleplayer_entry">Einzelspieler</string>
+<string name="header_multiplayer_entry">Multi-Player</string>
+<string name="spinner_zombie_count_text">Art der Epidemie (Zombie-Menge)</string>
+<string name="spinner_zombie_speed_text">Art der Zombies (Zombie-Geschwindigkeit)</string>
+<string name="singleplayer_game_entry_button_text">Einzelspieler Start</string>
+<string name="multiplayer_game_entry_button_text">Multi-Player Start</string>
+<string name="start_singleplayer_game_button_text">Einzelspieler Start (translation repeated)</string>
+<string name="start_multiplayer_game_button_text">Multi-Player-Match starten</string>
+<string name="join_multiplayer_game_button_text">Multi-Player-Match beitreten</string>
+<string name="help_button_text">Hilfe</string>
+<string name="adsense_company_name">Zombie-Labor</string>
+<string name="adsense_keywords">android+handy,android+spiele,casual+gaming,android+zubehör,zombies,zombie+film,filme,rennen</string>
+<string name="quit_confirm">Ja, schon</string>
+<string name="quit_cancel">Natürlich nicht!</string>
+<string name="start_game_button_text">Spiel starten</string>
+<string name="new_game_button">Neues Spiel</string>
+<string name="yes">Ja</string>
+<string name="no">Nein</string>
+</resources>

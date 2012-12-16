@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="zombie_speeds_str">
+    <item>(3kph) La noche de los muertos vivientes</item>
+    <item>(8kph) Resident Evil</item>
+    <item>(12kph) 28 días después...</item>
+  </string-array>
+  <string-array name="zombie_counts_str">
+    <item>Infección controlada</item>
+    <item>Infección local temprana</item>
+    <item>Infección local tardía</item>
+    <item>Pandemia del total</item>
+  </string-array>
+</resources>

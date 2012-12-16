@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="zombie_speeds_str">
+    <item>(3 km/h) La Nuit des Morts-Vivants</item>
+    <item>(8 km/h) Resident Evil</item>
+    <item>(13 km/h) 28 Jours plus tard</item>
+  </string-array>
+  <string-array name="zombie_speeds_average_speed_mph">
+    <item>2</item>
+    <item>5</item>
+    <item>8</item>
+  </string-array>
+
+  <string-array name="zombie_counts_str">
+    <item>Epidémie Contrôlée</item>
+    <item>Début d\'infestation locale</item>
+    <item>Infestation locale avancée</item>
+    <item>Pandémie Totale</item>
+  </string-array>
+  <string-array name="zombie_counts_average_distance_between_zombie_meters">
+    <item>500</item>
+    <item>300</item>
+    <item>200</item>
+    <item>100</item>
+  </string-array>
+</resources>

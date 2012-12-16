@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- Menu items and contents of resulting dialog boxes -->
+	<string name="menu_pause">Pause</string>
+  <string name="menu_stop">Just Give up and Die</string>
+  <string name="menu_my_location">My Location</string>
+  <string name="menu_map_view">Map</string>
+  <string name="menu_satellite_view">Satellite</string>
+  <string name="confirm_menu_stop">The horror, was it too much for you?</string>
+  <string name="paused">The whole world\'s paused!  How\'d you do that?</string>
+	<string name="resume">Resume Life</string>
+
+  <!-- Start of game dialog alert messages -->
+	<string name="waiting_for_location">Waiting for an accurate location...  You need to be outside with a clear view of the sky.  This may take a couple minutes.</string>
+	<string name="message_pick_destination">Tap on the map to pick your destination.</string>
+	<string name="message_confirm_destination">Was that the destination you meant to choose?</string>
+
+  <!-- Hardware capability error messages -->
+  <string name="error_no_gps">No GPS Device Found.</string>
+  <string name="error_gps_disabled">ZombieRun requires GPS-level location information.  Your GPS device is disabled.  Please enable your GPS receiver.</string>
+  <string name="enable_gps">Enable GPS</string>
+  <string name="error_no_vibrator">Could not find phone vibrator.  Ack!  WTF!  I can\'t work in this environment.</string>
+
+  <!-- Winning and losing strings -->
+  <string name="message_win">Survival!</string>
+  <string name="message_lose">AAAH!  Braaaaaains!</string>
+  <string name="new_game_button">New Game</string>
+
+  <!-- Main menu strings -->  
+  <string name="app_name">Zombie, Run!</string>
+  <string name="header_singleplayer_entry">Single Player Game</string>
+  <string name="header_multiplayer_entry">Multiplayer Game</string>
+  <string name="spinner_zombie_count_text">Type of Outbreak (zombie density)</string>
+  <string name="spinner_zombie_speed_text">Type of Zombie (zombie speed)</string>
+  <string name="start_game_button_text">Start Game</string>
+  <string name="singleplayer_game_entry_button_text">Start Single Player Game</string>
+  <string name="multiplayer_game_entry_button_text">Start Multiplayer Game</string>
+  <string name="start_singleplayer_game_button_text">Start Single Player Game</string>
+  <string name="start_multiplayer_game_button_text">Create New Multi Player Game</string>
+  <string name="join_multiplayer_game_button_text">Join Multi Player Game</string>
+  <string name="help_button_text">Help</string>
+
+  <!-- Strings for Adsense -->  
+	<string name="adsense_pub_id">ca-mb-app-pub-5257925350964339</string>
+	<string name="adsense_company_name">Zombie Research Labs</string>
+	<string name="adsense_keywords">android+phones,android+games,causal+gaming,android+accessories,zombies,zombie+movie,movies,running</string>
+	<string name="adsense_channel">6916312170</string>
+	<string name="about_url">http://www.zrli.org/zombierun/</string>
+	
+	<string name="quit_confirm">Yep.</string>
+	<string name="quit_cancel">Actually, No.</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+<string name="start_multiplayer_button_text">Multiplayer Game! (beta)</string>
+<string name="web_game_url">http://game.zrli.org/</string>
+<string name="webgame_useragent">zr_android_16</string>
+</resources>
